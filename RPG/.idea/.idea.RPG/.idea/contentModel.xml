@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\sulai\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\sulai\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_RPG.-705767458.00" t="ExcludeRecursive" />
-    <e p="C:\Users\sulai\OneDrive\Desktop\First-3D-RPG-master\RPG" t="IncludeRecursive">
+    <e p="C:\Users\sulai\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_RPG.-275162525.00" t="ExcludeRecursive" />
+    <e p="C:\Users\sulai\OneDrive\Desktop\The-Magical-Book\RPG" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Asset Packs" t="Include">
@@ -33,9 +33,14 @@
             <e p="FollowCamera.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="IAction.cs" t="Include" />
+            <e p="PersistentObjectSpawner.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
             <e p="Mover.cs" t="Include" />
+          </e>
+          <e p="Scene Management" t="Include">
+            <e p="Fader.cs" t="Include" />
+            <e p="Portal.cs" t="Include" />
           </e>
         </e>
       </e>

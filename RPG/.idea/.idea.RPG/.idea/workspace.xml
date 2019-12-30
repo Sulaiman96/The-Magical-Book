@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761ff8c7-7ae8-4879-bcfa-4fb9abe2918b" name="Default Changelist" comment="" />
+    <list default="true" id="761ff8c7-7ae8-4879-bcfa-4fb9abe2918b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyAdventureMaterial_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyAdventureMaterial_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Character/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Character/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Core/FollowCamera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Core/FollowCamera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Sandbox Terrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Sandbox Terrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sandbox.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sandbox.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sandbox/Course Sandbox Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sandbox/Course Sandbox Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/AnnotationManager" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AnnotationManager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4df5e4-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4df5e4-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/ea2060-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/ea2060-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/TerrainTools/PaintTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Library/TerrainTools/PaintTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/42/424ec241095494c4d9762c9f83a3140c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/42/424ec241095494c4d9762c9f83a3140c.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4a/4ac55b508a369476a806764e1584109f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4a/4ac55b508a369476a806764e1584109f.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5e/5e6881ea4cec64972ac2dad2ef1a5c5a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5e/5e6881ea4cec64972ac2dad2ef1a5c5a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/67/67b7d30269c68724696055cd9098986b.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/67/67b7d30269c68724696055cd9098986b.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/72/72c1f977120d545c681a8682065f4fe5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/72/72c1f977120d545c681a8682065f4fe5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/72/72c1f977120d545c681a8682065f4fe5.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/72/72c1f977120d545c681a8682065f4fe5.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d9/d9d58b97dfed84e4dbf1cb206e7e528b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d9/d9d58b97dfed84e4dbf1cb206e7e528b.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e6/e68e15dcc54b74f5ab1d322e576cd326" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e6/e68e15dcc54b74f5ab1d322e576cd326.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fa/fa8eda4ec55ee1a4e99ca991c5828dbf.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fa/fa8eda4ec55ee1a4e99ca991c5828dbf.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/IAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PersistentObjectSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/ActionScheduler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicControlRemover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene Management/Portal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene Management/Fader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -26,10 +76,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicControlRemover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/PersistentObjectSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scene Management/Fader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scene Management/Portal.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1ReCL5lapdklS90aNvVnFitfxKS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,6 +93,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,6 +142,8 @@
       <workItem from="1570018119096" duration="2020000" />
       <workItem from="1572954884234" duration="395000" />
       <workItem from="1577121211526" duration="4127000" />
+      <workItem from="1577646234809" duration="8285000" />
+      <workItem from="1577723063489" duration="4670000" />
     </task>
     <servers />
   </component>
@@ -95,6 +152,19 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
