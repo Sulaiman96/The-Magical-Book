@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 9076392150963414361}
+  maxSpeed: 6
 --- !u!114 &7914985777875559889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +94,7 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwellTime: 1.5
+  patrolSpeedFraction: 0.2
 --- !u!114 &8693262967761043642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +107,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b12e2539ffee4852b1e30f6250fbcf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2817932419970134901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7818926112285660607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!1001 &6765125143138993269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 3558101704812335562, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4122494890823493668, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
@@ -177,16 +192,16 @@ PrefabInstance:
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 2616118070702282390, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: health
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 3558101704812335563, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 7265579689404050513}
+    - target: {fileID: 2616118070702282390, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: health
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b5921da34ef24236b092d028f796ff2, type: 3}
 --- !u!4 &7265579689404050513 stripped

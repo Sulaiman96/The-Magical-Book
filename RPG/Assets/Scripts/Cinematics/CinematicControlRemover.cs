@@ -4,10 +4,11 @@ using RPG.Control;
 using RPG.Core;
 using UnityEngine;
 using UnityEngine.Playables;
+using RPG.Saving;
 
 namespace RPG.Cinmeatics
 {
-    public class CinematicControlRemover : MonoBehaviour
+    public class CinematicControlRemover : MonoBehaviour, ISaveable
     {
         private GameObject player;
         private bool alreadyPlayed = false;
@@ -31,12 +32,20 @@ namespace RPG.Cinmeatics
         
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Player") && alreadyPlayed != true)
-            {
-                GetComponent<PlayableDirector>().Play();
-                alreadyPlayed = true;
-            }
-            
+            if (!other.CompareTag("Player") || alreadyPlayed == true) return;
+            GetComponent<PlayableDirector>().Play();
+            alreadyPlayed = true;
+        }
+
+        public object CaptureState()
+        {
+            return alreadyPlayed;
+        }
+
+        public void RestoreState(object state)
+        {
+            alreadyPlayed = (bool) state;
+            if (alreadyPlayed == true) Debug.Log("Yup, cinematic already played");
         }
     }
 }
