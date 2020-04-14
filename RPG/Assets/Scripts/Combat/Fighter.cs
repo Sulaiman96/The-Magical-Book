@@ -9,16 +9,17 @@ namespace RPG.Combat
     public class Fighter : MonoBehaviour, IAction
     {
         #region Variables
-        Health target;
-        [SerializeField] float weaponRange = 2f;
-        [SerializeField] float timeBetweenAttacks = 1.35f;
-        [SerializeField] float weaponDamage = 25f;
 
+        private Health target;
+        public float timeBetweenAttacks = 1.35f;
+        public Transform handTransform = null;
+        public Weapon defaultWeapon = null;
         Mover mover;
         float timeSinceLastAttack = Mathf.Infinity;
         private ActionScheduler _actionScheduler;
         private Animator _animator;
-
+        private Weapon currentWeapon = null;
+        
         #endregion
 
         private void Start()
@@ -26,6 +27,8 @@ namespace RPG.Combat
             _animator = GetComponent<Animator>();
             _actionScheduler = GetComponent<ActionScheduler>();
             mover = GetComponent<Mover>();
+
+            EquippingWeapon(defaultWeapon);
         }
 
         private void Update()
@@ -46,19 +49,25 @@ namespace RPG.Combat
                 AttackBehaviour();
             }
         }
-
+            
+        public void EquippingWeapon(Weapon weapon)
+        {
+            currentWeapon = weapon;
+            Animator animator = GetComponent<Animator>();
+            currentWeapon.Spawn(handTransform, animator);
+        }
 
         //Animation Event
         void Hit()
         {
             if (target == null) return;
-            target.TakeDamage(weaponDamage);
+            target.TakeDamage(currentWeapon.getWeaponDamage());
         }
 
         //check to see if player is in range to target.
         private bool GetIsInRnage()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.getWeaponRange();
         }
 
         #region Attacking

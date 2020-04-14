@@ -26,9 +26,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38399134ba36462faa1067acf966378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponRange: 1
   timeBetweenAttacks: 1.35
-  weaponDamage: 10
+  handTransform: {fileID: 0}
+  defaultWeapon: {fileID: 0}
 --- !u!195 &873785371984643768
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -77,6 +77,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 9076392150963414361}
   maxSpeed: 6
+--- !u!114 &2817932419970134901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7818926112285660607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!114 &7914985777875559889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,19 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b12e2539ffee4852b1e30f6250fbcf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2817932419970134901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7818926112285660607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueIdentifier: 
 --- !u!1001 &6765125143138993269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,6 +192,23 @@ PrefabInstance:
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: d78b22426974ddc498c9a80c2b129e1e,
+        type: 2}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 9076392150963408175}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: d78b22426974ddc498c9a80c2b129e1e,
+        type: 2}
     - target: {fileID: 3558101704812335563, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: target

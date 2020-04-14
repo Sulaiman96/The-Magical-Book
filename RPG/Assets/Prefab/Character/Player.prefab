@@ -858,7 +858,7 @@ PrefabInstance:
     - target: {fileID: 4122494890823493668, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.203
+      value: 6.052
       objectReference: {fileID: 0}
     - target: {fileID: 4122494890823493668, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
@@ -908,8 +908,19 @@ PrefabInstance:
     - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: weaponDamage
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 6971675745683601052}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 9197112336566837343, guid: 85b5b9b120c7dc245a5eba7c898f899c,
+        type: 3}
     - target: {fileID: 3558101704812335564, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: m_Enabled
