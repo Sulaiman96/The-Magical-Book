@@ -921,6 +921,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9197112336566837343, guid: 85b5b9b120c7dc245a5eba7c898f899c,
         type: 3}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 6971675745683527412}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 6971675745683601052}
+    - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: d78b22426974ddc498c9a80c2b129e1e,
+        type: 2}
     - target: {fileID: 3558101704812335564, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: m_Enabled

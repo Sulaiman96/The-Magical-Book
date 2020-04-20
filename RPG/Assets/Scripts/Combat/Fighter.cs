@@ -3,23 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
+using RPG.Saving;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction
+    public class Fighter : MonoBehaviour, IAction, ISaveable
     {
         #region Variables
-
+        [SerializeField] float timeBetweenAttacks = 1.35f;
+        [SerializeField] Transform rightHandTransform;
+        [SerializeField] Transform leftHandTransform;
+        [SerializeField] Weapon defaultWeapon;
+        
+        private Mover mover;
         private Health target;
-        public float timeBetweenAttacks = 1.35f;
-        public Transform handTransform = null;
-        public Weapon defaultWeapon = null;
-        Mover mover;
-        float timeSinceLastAttack = Mathf.Infinity;
+        private float timeSinceLastAttack = Mathf.Infinity;
         private ActionScheduler _actionScheduler;
         private Animator _animator;
         private Weapon currentWeapon = null;
-        
         #endregion
 
         private void Start()
@@ -27,8 +28,10 @@ namespace RPG.Combat
             _animator = GetComponent<Animator>();
             _actionScheduler = GetComponent<ActionScheduler>();
             mover = GetComponent<Mover>();
-
-            EquippingWeapon(defaultWeapon);
+            if (currentWeapon == null)
+            {
+                EquippingWeapon(defaultWeapon);
+            }
         }
 
         private void Update()
@@ -54,14 +57,27 @@ namespace RPG.Combat
         {
             currentWeapon = weapon;
             Animator animator = GetComponent<Animator>();
-            currentWeapon.Spawn(handTransform, animator);
+            weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
 
         //Animation Event
         void Hit()
         {
             if (target == null) return;
-            target.TakeDamage(currentWeapon.getWeaponDamage());
+            if (currentWeapon.HasProjectile())
+            {
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+            }
+            else
+            {
+                target.TakeDamage(currentWeapon.getWeaponDamage());
+            }
+            
+        }
+
+        void Shoot()
+        {
+            Hit();
         }
 
         //check to see if player is in range to target.
@@ -113,6 +129,19 @@ namespace RPG.Combat
             _animator.SetTrigger("attack");
         }
         #endregion
+        
+        public object CaptureState()
+        {
+            return currentWeapon == null ? "Unarmed" : currentWeapon.name;
+        }
+
+        public void RestoreState(object state)
+        {
+            string weaponName = (string) state;
+            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            EquippingWeapon(weapon);
+        }
+        
     }
 }
 

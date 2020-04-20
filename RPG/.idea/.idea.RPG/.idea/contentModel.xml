@@ -22,6 +22,7 @@
           <e p="Combat" t="Include">
             <e p="CombatTarget.cs" t="Include" />
             <e p="Fighter.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponPickup.cs" t="Include" />
           </e>
@@ -32,6 +33,7 @@
           </e>
           <e p="Core" t="Include">
             <e p="ActionScheduler.cs" t="Include" />
+            <e p="AfterEffectsCleaner.cs" t="Include" />
             <e p="FollowCamera.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="IAction.cs" t="Include" />
@@ -50,6 +52,11 @@
             <e p="Fader.cs" t="Include" />
             <e p="Portal.cs" t="Include" />
             <e p="SavingWrapper.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SimpleFX" t="Include">
+          <e p="Materials" t="Include">
+            <e p="UnlitVertexColour_Alpha.shader" t="Include" />
           </e>
         </e>
       </e>

@@ -2,32 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761ff8c7-7ae8-4879-bcfa-4fb9abe2918b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/AfterEffectsCleaner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/AfterEffectsCleaner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyAdventureMaterial_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyAdventureMaterial_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyVikings_Material_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyVikings_Material_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyVikings_Material_01.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Materials/PolyVikings_Material_01.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Textures/Texture_01_Vikings.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Synty - Polygon Student Sample/Textures/Texture_01_Vikings.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Environments/Pillars/SM_Env_Wall_Round_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Environments/Pillars/SM_Env_Wall_Round_01.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Character/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Character/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Character/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Character/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Ocean.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Ocean.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Pickup Items/SwordPickup.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Pickup Items/SwordPickup.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapons/Sword/Sword Override Controller.overrideController" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapons/Sword/Sword Override Controller.overrideController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapons/Sword/Sword.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapons/Sword/Sword.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapons/Unarmed/Unarmed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapons/Unarmed/Unarmed.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Moments/Village.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Moments/Village.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-0cc33bb4e18c4c044b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-0cc33bb4e18c4c044b.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-5e6881ea4cec64972a.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-5e6881ea4cec64972a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-93d18a6f38b41451d8.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-93d18a6f38b41451d8.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/bc9829-5e6881ea4cec64972a.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/bc9829-5e6881ea4cec64972a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/bc9829-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/bc9829-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0c/0cc33bb4e18c4c044b8fab5aafb572c1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0c/0cc33bb4e18c4c044b8fab5aafb572c1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0c/0cc33bb4e18c4c044b8fab5aafb572c1.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0c/0cc33bb4e18c4c044b8fab5aafb572c1.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/5e/5e6881ea4cec64972ac2dad2ef1a5c5a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5e/5e6881ea4cec64972ac2dad2ef1a5c5a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/5e/5e6881ea4cec64972ac2dad2ef1a5c5a.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5e/5e6881ea4cec64972ac2dad2ef1a5c5a.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6ca2c6a37815d4c44891fbccfb909d41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6ca2c6a37815d4c44891fbccfb909d41.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/73/7343061815dcbe74f84508e3f82a9ddf" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/73/7343061815dcbe74f84508e3f82a9ddf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/73/7343061815dcbe74f84508e3f82a9ddf.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/73/7343061815dcbe74f84508e3f82a9ddf.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/91/91fc4f906213a9d49986bdadab48bba5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/91/91fc4f906213a9d49986bdadab48bba5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/93/931e446a7b26e5f44afdafd11f0884e2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/93/931e446a7b26e5f44afdafd11f0884e2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/93/931e446a7b26e5f44afdafd11f0884e2.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/93/931e446a7b26e5f44afdafd11f0884e2.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/93/93d18a6f38b41451d852526bf660e930" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/93/93d18a6f38b41451d852526bf660e930" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/93/93d18a6f38b41451d852526bf660e930.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/93/93d18a6f38b41451d852526bf660e930.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/c3/c38399134ba36462faa1067acf966378" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c3/c38399134ba36462faa1067acf966378" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/cb/cb1237673e111454db1e66566fd340bb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cb/cb1237673e111454db1e66566fd340bb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d7/d78b22426974ddc498c9a80c2b129e1e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d7/d78b22426974ddc498c9a80c2b129e1e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d7/d78b22426974ddc498c9a80c2b129e1e.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d7/d78b22426974ddc498c9a80c2b129e1e.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d7/d7aea9993a43db64b8ceacc20265ab6c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d7/d7aea9993a43db64b8ceacc20265ab6c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e2/e295b4367dd99064a9825679accdbc2e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e2/e295b4367dd99064a9825679accdbc2e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e2/e295b4367dd99064a9825679accdbc2e.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e2/e295b4367dd99064a9825679accdbc2e.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/eb/eb83b2b658dfc194e8b26c4421e3c748.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/eb/eb83b2b658dfc194e8b26c4421e3c748.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fa/fa8eda4ec55ee1a4e99ca991c5828dbf.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fa/fa8eda4ec55ee1a4e99ca991c5828dbf.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
@@ -45,6 +78,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PersistentObjectSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/AfterEffectsCleaner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicControlRemover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene Management/Portal.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,8 +90,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/IAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/ActionScheduler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene Management/Fader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/StateCache/Hierarchy/4f1ba6-5e6881ea4cec64972a.json" root0="FORCE_HIGHLIGHTING" />
@@ -76,8 +112,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scene Management/SavingWrapper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicControlRemover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/AfterEffectsCleaner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" />
       </list>
     </option>
@@ -148,6 +186,10 @@
       <workItem from="1577801313812" duration="4149000" />
       <workItem from="1577821879632" duration="1928000" />
       <workItem from="1583396713085" duration="3095000" />
+      <workItem from="1587071865517" duration="8690000" />
+      <workItem from="1587179743780" duration="7675000" />
+      <workItem from="1587284916746" duration="8880000" />
+      <workItem from="1587368201048" duration="3601000" />
     </task>
     <servers />
   </component>
@@ -170,18 +212,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1752" y="422" key="RiderGenerateDialog" timestamp="1577804928964">
+    <state x="1752" y="422" key="RiderGenerateDialog" timestamp="1587366683318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1752" y="422" key="RiderGenerateDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1577804928964" />
-    <state x="1421" y="364" key="SettingsEditor" timestamp="1577801603851">
+    <state x="1752" y="422" key="RiderGenerateDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1587366683318" />
+    <state x="1780" y="434" key="VCS.ChangeListViewerDialog" timestamp="1587374081514">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1421" y="364" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1577801603851" />
-    <state x="1576" y="343" key="run.anything.popup" timestamp="1577800210872">
+    <state x="1780" y="434" key="VCS.ChangeListViewerDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1587374081514" />
+    <state x="1582" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1587368380930">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1576" y="343" key="run.anything.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1577800210872" />
+    <state x="1582" y="329" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587368380930" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

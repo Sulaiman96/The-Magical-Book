@@ -7,13 +7,37 @@ namespace RPG.Combat
 {
     public class WeaponPickup : MonoBehaviour
     {
-        public Weapon weapon = null;
+        [SerializeField] Weapon weapon = null;
+        [SerializeField] private float respawnTime = 5f;
+        private Collider collider;
+
+        private void Start()
+        {
+            collider = GetComponent<Collider>();
+        }
+
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "Player")
+            if (other.gameObject.CompareTag("Player"))
             {
                 other.GetComponent<Fighter>().EquippingWeapon(weapon);
-                Destroy(gameObject);
+                StartCoroutine(HideForSeconds(respawnTime));
+            }
+        }
+
+        private IEnumerator HideForSeconds(float seconds)
+        {
+            ShowPickup(false);
+            yield return new WaitForSeconds(seconds);
+            ShowPickup(true);
+        }
+
+        private void ShowPickup(bool shouldShow)
+        {
+            collider.enabled = shouldShow;
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(shouldShow);
             }
         }
     }
