@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11566379229940b59999e232b6adf94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  regenerationPercentage: 80
 --- !u!114 &642390385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,6 +66,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uniqueIdentifier: player
+--- !u!114 &3163041675459011082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6767831024641419095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38399134ba36462faa1067acf966378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 1.35
+  rightHandTransform: {fileID: 6971675745683601052}
+  leftHandTransform: {fileID: 6971675745683527412}
+  defaultWeapon: {fileID: 11400000, guid: d78b22426974ddc498c9a80c2b129e1e, type: 2}
 --- !u!114 &7594394140172014985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,9 +561,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6971675745683406616}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6971675745683539290 stripped
+--- !u!4 &6971675745683598666 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 457282, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 463442, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 6971675745683406616}
   m_PrefabAsset: {fileID: 0}
@@ -581,9 +597,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6971675745683406616}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6971675745683598666 stripped
+--- !u!4 &6971675745683539290 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 463442, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 457282, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 6971675745683406616}
   m_PrefabAsset: {fileID: 0}
@@ -905,6 +921,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: characterClass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: levelUpParticleEffect
+      value: 
+      objectReference: {fileID: 6492628220893894295, guid: 1fffcc87b934f6a43aa49583e58a4158,
+        type: 3}
+    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: shouldUseModifiers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558101704812335564, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: weaponDamage
@@ -937,11 +974,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d78b22426974ddc498c9a80c2b129e1e,
         type: 2}
-    - target: {fileID: 3558101704812335564, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3558101704812335563, guid: 7b5921da34ef24236b092d028f796ff2, type: 3}
     - {fileID: 2616118070702282390, guid: 7b5921da34ef24236b092d028f796ff2, type: 3}

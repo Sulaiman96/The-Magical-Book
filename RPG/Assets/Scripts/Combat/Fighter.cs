@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
+using RPG.Resources;
 using RPG.Saving;
+using RPG.Stats;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable
+    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         #region Variables
         [SerializeField] float timeBetweenAttacks = 1.35f;
@@ -64,13 +66,14 @@ namespace RPG.Combat
         void Hit()
         {
             if (target == null) return;
+            float damage = GetComponent<BaseStats>().GetStat(Stats.Stats.Damage);
             if (currentWeapon.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
             }
             else
             {
-                target.TakeDamage(currentWeapon.getWeaponDamage());
+                target.TakeDamage(gameObject, damage );
             }
             
         }
@@ -83,7 +86,7 @@ namespace RPG.Combat
         //check to see if player is in range to target.
         private bool GetIsInRnage()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.getWeaponRange();
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetWeaponRange();
         }
 
         #region Attacking
@@ -105,6 +108,23 @@ namespace RPG.Combat
             GetComponent<Animator>().ResetTrigger("attack");
             GetComponent<Animator>().SetTrigger("stopAttacking");
         }
+        
+        public IEnumerable<float> GetAdditiveModifier(Stats.Stats stat)
+        {
+            if (stat == Stats.Stats.Damage)
+            {
+                yield return currentWeapon.GetWeaponDamage();
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifier(Stats.Stats stat)
+        {
+            if (stat == Stats.Stats.Damage)
+            {
+                yield return currentWeapon.GetPercentageBonus();
+            }
+        }
+
 
         public bool CanAttack(GameObject combatTarget)
         {
@@ -138,9 +158,15 @@ namespace RPG.Combat
         public void RestoreState(object state)
         {
             string weaponName = (string) state;
-            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            Weapon weapon = UnityEngine.Resources.Load<Weapon>(weaponName);
             EquippingWeapon(weapon);
         }
+
+        public Health GetTarget()
+        {
+            return target;
+        }
+
         
     }
 }

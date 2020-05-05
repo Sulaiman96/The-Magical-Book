@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3558101704812335563}
   - component: {fileID: 3558101704812335564}
   - component: {fileID: 3558101704812335565}
-  - component: {fileID: 5781112940620186526}
   - component: {fileID: 2616118070702282390}
+  - component: {fileID: 8242357747193562322}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  maxSpeed: 6
 --- !u!195 &3558101704812335564
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -89,21 +90,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5781112940620186526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3558101704812335562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38399134ba36462faa1067acf966378, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponRange: 2
-  timeBetweenAttacks: 1.35
-  weaponDamage: 25
 --- !u!114 &2616118070702282390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,3 +103,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &8242357747193562322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558101704812335562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00542229bf828bb4d93a5534e402831f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLevel: 1
+  characterClass: 1
+  progression: {fileID: 11400000, guid: 27b2cefc949e206469f0877c008cfcbb, type: 2}
