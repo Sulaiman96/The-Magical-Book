@@ -204,6 +204,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: startingLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: characterClass
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558101704812335563, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 7265579689404050513}
+    - target: {fileID: 2616118070702282390, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: health
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: weaponDamage
@@ -236,21 +256,6 @@ PrefabInstance:
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 9076392150963350829}
-    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: startingLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3558101704812335563, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 7265579689404050513}
-    - target: {fileID: 2616118070702282390, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: health
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b5921da34ef24236b092d028f796ff2, type: 3}
 --- !u!4 &7265579689404050513 stripped

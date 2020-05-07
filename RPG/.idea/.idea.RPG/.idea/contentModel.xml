@@ -10,6 +10,13 @@
           <e p="Animations" t="Include">
             <e p="README - Usage Rights for these assets 1.txt" t="Include" />
           </e>
+          <e p="Poly Assets" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Utils" t="Include">
+                <e p="LazyValue.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Synty - Polygon Student Sample" t="Include">
             <e p="README - Usage Rights for these assets.txt" t="Include" />
           </e>

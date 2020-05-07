@@ -2,9 +2,12 @@
 {
     public enum CharacterClass
     {
-        Player, 
-        Melee,
-        Mage,
-        Archer
+        Player,
+        Archer,
+        Skeleton,
+        Ghost,
+        Goblin,
+        Knight,
+        Golem,
     }
 }

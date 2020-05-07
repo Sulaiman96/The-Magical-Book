@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Utils;
 using UnityEngine;
 
 namespace RPG.Stats
@@ -16,25 +17,44 @@ namespace RPG.Stats
 
         public event Action onLevelUp;
         
-        private int currentLevel = 0;
+        LazyValue<int> currentLevel;
+        private Experience experience;
 
+        private void Awake()
+        {
+            experience = GetComponent<Experience>();
+            currentLevel = new LazyValue<int>(CalculateCurrentLevel);
+        }
         private void Start()
         {
-            currentLevel = CalculateCurrentLevel();
-            Experience experience = GetComponent<Experience>();
+            currentLevel.ForceInit();
+        }
+        
+        private void OnEnable()
+        {
             if (experience != null)
             {
                 //Not calling the method, but adding it to our delegate list.
                 experience.onExperienceGained += UpdateLevel; 
             }
         }
+
+        private void OnDisable()
+        {
+            if (experience != null)
+            {
+                //Not calling the method, but removing it from our delegate list.
+                experience.onExperienceGained -= UpdateLevel; 
+            }
+        }
+        
          
         private void UpdateLevel()
         {
             int newLevel = CalculateCurrentLevel();
-            if (newLevel > currentLevel)
+            if (newLevel > currentLevel.value)
             {
-                currentLevel = newLevel;
+                currentLevel.value = newLevel;
                 LevelUpEffect();
                 onLevelUp();
             }
@@ -49,8 +69,6 @@ namespace RPG.Stats
         {
             return (GetBaseStat(stat) + GetAdditiveModifier(stat)) * (1 + (GetPercentageModifier(stat)/100));
         }
-
-        
 
         private float GetBaseStat(Stats stat)
         {
@@ -88,11 +106,7 @@ namespace RPG.Stats
 
         public int GetCurrentLevel()
         {
-            if (currentLevel < 1)
-            {
-                currentLevel = CalculateCurrentLevel();
-            }
-            return currentLevel;
+            return currentLevel.value;
         }
         public int CalculateCurrentLevel()
         {
@@ -110,7 +124,6 @@ namespace RPG.Stats
                     return level;
                 }
             }
-
             return penultimateLevel + 1;
         }
     }

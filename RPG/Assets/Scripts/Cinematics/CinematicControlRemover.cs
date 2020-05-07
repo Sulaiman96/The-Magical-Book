@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using RPG.Control;
 using RPG.Core;
@@ -12,11 +13,21 @@ namespace RPG.Cinmeatics
     {
         private GameObject player;
         private bool alreadyPlayed = false;
-        void Start()
+        void Awake()
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+
+        private void OnEnable()
         {
             GetComponent<PlayableDirector>().played += DisableControl;
             GetComponent<PlayableDirector>().stopped += EnableControl;
-            player = GameObject.FindWithTag("Player");
+        }
+
+        private void OnDisable()
+        {
+            GetComponent<PlayableDirector>().played -= DisableControl;
+            GetComponent<PlayableDirector>().stopped -= EnableControl;
         }
 
         void DisableControl(PlayableDirector pd)

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Utils;
 using UnityEngine;
 using RPG.Combat;
 using RPG.Core;
@@ -27,7 +28,7 @@ namespace RPG.Control
         Mover _mover;
 
 
-        Vector3 _guardPosition;
+        LazyValue<Vector3> _guardPosition;
         float _timeSinceLastSawPlayer = Mathf.Infinity;
         float _timeSinceArrivedAtWaypoint = Mathf.Infinity;
         int _currentWaypointIndex = 0;
@@ -35,15 +36,24 @@ namespace RPG.Control
 
         #endregion
 
-        private void Start()
+        private void Awake()
         {
             _actionScheduler = GetComponent<ActionScheduler>();
             _fighter = GetComponent<Fighter>();
             _health = GetComponent<Health>();
             _mover = GetComponent<Mover>();
             _player = GameObject.FindWithTag("Player");
+            _guardPosition = new LazyValue<Vector3>(SetInitialPosition);
+        }
 
-            _guardPosition = transform.position;
+        private Vector3 SetInitialPosition()
+        {
+            return transform.position;
+        }
+
+        private void Start()
+        {
+            _guardPosition.ForceInit();
         }
 
         private void Update()
@@ -70,7 +80,7 @@ namespace RPG.Control
 
         private void PatrolBehaviour()
         {
-            Vector3 nextPosition = _guardPosition;
+            Vector3 nextPosition = _guardPosition.value;
 
             if(patrolPath != null)
             {

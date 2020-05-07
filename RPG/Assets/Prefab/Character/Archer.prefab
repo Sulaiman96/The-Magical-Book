@@ -338,16 +338,16 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 6155854980232096514}
+    - target: {fileID: 3422790464631488679, guid: 93d18a6f38b41451d852526bf660e930,
+        type: 3}
+      propertyPath: characterClass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7818926112285660606, guid: 93d18a6f38b41451d852526bf660e930,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 5497955974249719360}
-    - target: {fileID: 3422790464631488679, guid: 93d18a6f38b41451d852526bf660e930,
-        type: 3}
-      propertyPath: characterClass
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 750737094318895944, guid: 93d18a6f38b41451d852526bf660e930,
         type: 3}
       propertyPath: leftHandTransform
