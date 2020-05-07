@@ -3,29 +3,31 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b71ad40e238046238f9b0c6f33c3791, type: 3}
+  m_Script: {fileID: 0}
   m_Name: SM_Prop_WaterWheel_01_Convex
   m_EditorClassIdentifier: 
-  ConvexMeshes:
-  - {fileID: 43405823333272420}
-  HashOfSourceMeshes: 2916e64cf412892f3996974600000000
+  m_Name: SM_Prop_WaterWheel_01_Convex
+  m_EditorClassIdentifier: 
 --- !u!43 &43405823333272420
 Mesh:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 1
-  serializedVersion: 8
+  serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
     indexCount: 84
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 16
     localAABB:
@@ -43,16 +45,40 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 0b0002000f00000001000600000006000700020005000800050003000800020004000900050002000900040007000900060003000a00070006000a00010000000b00040002000b00000007000b00070004000b00030005000c000a0003000c0007000a000c00060001000d00030006000d00010008000d00080003000d00050009000e00090007000e000c0005000e0007000c000e00080001000f00020008000f0001000b000f00
-  m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 1
+    serializedVersion: 2
     m_VertexCount: 16
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
       dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -141,4 +167,10 @@ Mesh:
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
