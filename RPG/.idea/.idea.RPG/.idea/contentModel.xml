@@ -17,6 +17,11 @@
               </e>
             </e>
           </e>
+          <e p="SimpleFX" t="Include">
+            <e p="Materials" t="Include">
+              <e p="UnlitVertexColour_Alpha.shader" t="Include" />
+            </e>
+          </e>
           <e p="Synty - Polygon Student Sample" t="Include">
             <e p="README - Usage Rights for these assets.txt" t="Include" />
           </e>
@@ -36,6 +41,8 @@
           </e>
           <e p="Control" t="Include">
             <e p="AIController.cs" t="Include" />
+            <e p="CursorType.cs" t="Include" />
+            <e p="IRaycastable.cs" t="Include" />
             <e p="PatrolPath.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
           </e>
@@ -73,11 +80,6 @@
             <e p="Progression.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
             <e p="XPDisplay.cs" t="Include" />
-          </e>
-        </e>
-        <e p="SimpleFX" t="Include">
-          <e p="Materials" t="Include">
-            <e p="UnlitVertexColour_Alpha.shader" t="Include" />
           </e>
         </e>
       </e>

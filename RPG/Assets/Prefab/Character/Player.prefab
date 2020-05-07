@@ -94,6 +94,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e631b1d2debe48658c2ada14883649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorStyleMappings:
+  - type: 0
+    texture: {fileID: 2800000, guid: 21628736160fcc9488493401da3ef621, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 1
+    texture: {fileID: 2800000, guid: 6fdfcd4167ed5e7488584241bb671bb2, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 2
+    texture: {fileID: 2800000, guid: fee23eb8e5d9ba84ab01910b874b4b30, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 3
+    texture: {fileID: 2800000, guid: cecad95c851b97f40b105b30b0bfede3, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 4
+    texture: {fileID: 2800000, guid: f8c873f1e53e83f4aabf342d6be1dfc3, type: 3}
+    hotspot: {x: 0, y: 0}
 --- !u!1001 &6971675745683406616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -856,16 +872,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3558101704812335562, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3558101704812335562, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4122494890823493668, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -920,6 +926,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558101704812335562, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558101704812335562, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
