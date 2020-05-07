@@ -1,4 +1,5 @@
 ﻿using RPG.Core;
+using RPG.Resources;
 using UnityEngine;
 
 namespace RPG.Combat    
@@ -8,6 +9,7 @@ namespace RPG.Combat
     {
         public float weaponRange = 2f;
         public float weaponDamage = 25f;
+        public float percentageBonus = 0f;
         public AnimatorOverrideController weaponOverride = null;
         public GameObject weaponPrefab = null;
         public bool isRightHandedWeapon = true;
@@ -37,7 +39,6 @@ namespace RPG.Combat
 
         private void DestroyOldWeapon(Transform rightHand, Transform leftHand)
         {
-            if (rightHand == null) return;
             Transform oldWeapon = rightHand.Find(weaponName);
             if (oldWeapon == null)
             {
@@ -54,19 +55,23 @@ namespace RPG.Combat
             return projectile != null;
         }
         
-        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator, float calculatedDamage)
         {
             Projectile projectileInstance = Instantiate(projectile,
                 (isRightHandedWeapon ? rightHand : leftHand).position, Quaternion.identity);
-            projectileInstance.SetTarget(target, weaponDamage);
+            projectileInstance.SetTarget(target,instigator, calculatedDamage);
         }
 
-        public float getWeaponDamage()
+        public float GetWeaponDamage()
         {
             return weaponDamage;
         }
 
-        public float getWeaponRange()
+        public float GetPercentageBonus()
+        {
+            return percentageBonus;
+        }
+        public float GetWeaponRange()
         {
             return weaponRange;
         }

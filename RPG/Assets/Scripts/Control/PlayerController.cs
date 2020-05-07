@@ -5,6 +5,7 @@ using RPG.Movement;
 using UnityEngine;
 using RPG.Combat;
 using RPG.Core;
+using RPG.Resources;
 
 namespace RPG.Control
 {
@@ -13,7 +14,7 @@ namespace RPG.Control
         Health health;
         private Mover _mover;
 
-        private void Start()
+        private void Awake()
         {
             _mover = GetComponent<Mover>();
             health = GetComponent<Health>();

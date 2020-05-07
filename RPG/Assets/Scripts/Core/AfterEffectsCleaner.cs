@@ -7,6 +7,7 @@ namespace RPG.Core
     public class AfterEffectsCleaner : MonoBehaviour
     {
         private ParticleSystem _particleSystem;
+        [SerializeField] GameObject targetToDestory = null;
 
         private void Start()
         {
@@ -17,7 +18,14 @@ namespace RPG.Core
         {
             if (!_particleSystem.IsAlive())
             {
-                Destroy(gameObject);
+                if (targetToDestory != null)
+                {
+                    Destroy(targetToDestory);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
             }
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using RPG.Core;
+using RPG.Resources;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ namespace RPG.Combat{
         public bool isHoming = false;
         public GameObject hitEffect = null;
         Health target = null;
+        
+        private GameObject instigator = null;
         private float damage = 0f;
 
         private void Start()
@@ -30,8 +33,9 @@ namespace RPG.Combat{
             
         }
 
-        public void SetTarget(Health target, float damage)
+        public void SetTarget(Health target, GameObject instigator,  float damage)
         {
+            this.instigator = instigator;
             this.damage = damage;
             this.target = target;
         }
@@ -54,7 +58,7 @@ namespace RPG.Combat{
                 if (!target.IsDead())
                 {
                     if(hitEffect != null) Instantiate(hitEffect, GetTargetLocation(), Quaternion.Euler(0,-45,0));
-                    target.TakeDamage(damage);
+                    target.TakeDamage(instigator, damage);
                     Destroy(gameObject);
                 }
                 else

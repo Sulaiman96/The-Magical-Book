@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!54 &33764015210699275
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7818926112285660607}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!136 &1183369138695590254
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27,9 +43,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 1.35
-  rightHandTransform: {fileID: 0}
-  leftHandTransform: {fileID: 0}
-  defaultWeapon: {fileID: 0}
+  rightHandTransform: {fileID: 9076392150963408175}
+  leftHandTransform: {fileID: 9076392150963350829}
+  defaultWeapon: {fileID: 11400000, guid: d78b22426974ddc498c9a80c2b129e1e, type: 2}
 --- !u!195 &873785371984643768
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -121,22 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b12e2539ffee4852b1e30f6250fbcf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &33764015210699275
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7818926112285660607}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &6765125143138993269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,6 +204,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: startingLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242357747193562322, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: characterClass
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558101704812335563, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 7265579689404050513}
+    - target: {fileID: 2616118070702282390, guid: 7b5921da34ef24236b092d028f796ff2,
+        type: 3}
+      propertyPath: health
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5781112940620186526, guid: 7b5921da34ef24236b092d028f796ff2,
         type: 3}
       propertyPath: weaponDamage
@@ -236,16 +256,6 @@ PrefabInstance:
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 9076392150963350829}
-    - target: {fileID: 3558101704812335563, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 7265579689404050513}
-    - target: {fileID: 2616118070702282390, guid: 7b5921da34ef24236b092d028f796ff2,
-        type: 3}
-      propertyPath: health
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b5921da34ef24236b092d028f796ff2, type: 3}
 --- !u!4 &7265579689404050513 stripped
