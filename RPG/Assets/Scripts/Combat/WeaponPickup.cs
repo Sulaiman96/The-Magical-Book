@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Control;
 using UnityEngine;
 
 namespace RPG.Combat
 {
-    public class WeaponPickup : MonoBehaviour
+    public class WeaponPickup : MonoBehaviour, IRaycastable
     {
         [SerializeField] Weapon weapon = null;
         [SerializeField] private float respawnTime = 5f;
@@ -20,9 +21,14 @@ namespace RPG.Combat
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                other.GetComponent<Fighter>().EquippingWeapon(weapon);
-                StartCoroutine(HideForSeconds(respawnTime));
+                PickUp(other.GetComponent<Fighter>());
             }
+        }
+
+        private void PickUp(Fighter fighter)
+        {
+            fighter.EquippingWeapon(weapon);
+            StartCoroutine(HideForSeconds(respawnTime));
         }
 
         private IEnumerator HideForSeconds(float seconds)
@@ -39,6 +45,21 @@ namespace RPG.Combat
             {
                 child.gameObject.SetActive(shouldShow);
             }
+        }
+
+        public bool HandleRaycast(PlayerController callingController)
+        {
+            //You can change this into walk into range of the pickup, that way you can only pick it up if you're in range.
+            if (Input.GetMouseButtonDown(0))
+            {
+                PickUp(callingController.GetComponent<Fighter>());
+            }
+            return true;
+        }
+
+        public CursorType GetCursorType()
+        {
+            return CursorType.PickUp;
         }
     }
 }
