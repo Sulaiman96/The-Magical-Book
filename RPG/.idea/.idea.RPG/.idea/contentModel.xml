@@ -49,16 +49,17 @@
           <e p="Core" t="Include">
             <e p="ActionScheduler.cs" t="Include" />
             <e p="AfterEffectsCleaner.cs" t="Include" />
+            <e p="CameraFacing.cs" t="Include" />
             <e p="FollowCamera.cs" t="Include" />
             <e p="IAction.cs" t="Include" />
             <e p="PersistentObjectSpawner.cs" t="Include" />
           </e>
-          <e p="Movement" t="Include">
-            <e p="Mover.cs" t="Include" />
-          </e>
-          <e p="Resources" t="Include">
+          <e p="Health" t="Include">
             <e p="Health.cs" t="Include" />
             <e p="HealthDisplay.cs" t="Include" />
+          </e>
+          <e p="Movement" t="Include">
+            <e p="Mover.cs" t="Include" />
           </e>
           <e p="Saving" t="Include">
             <e p="ISaveable.cs" t="Include" />
@@ -80,6 +81,12 @@
             <e p="Progression.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
             <e p="XPDisplay.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Damage Text" t="Include">
+              <e p="DamageText.cs" t="Include" />
+              <e p="DamageTextSpawner.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
