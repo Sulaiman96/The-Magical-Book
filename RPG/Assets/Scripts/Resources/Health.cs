@@ -7,7 +7,7 @@ using RPG.Saving;
 using RPG.Stats;
 using UnityEngine.Events;
 
-namespace RPG.Health
+namespace RPG.Resources
 {
     public class Health : MonoBehaviour, ISaveable
     {
@@ -92,7 +92,7 @@ namespace RPG.Health
 
         public object CaptureState()
         {
-            return health;
+            return health.value;
         }
 
         public void RestoreState(object state)

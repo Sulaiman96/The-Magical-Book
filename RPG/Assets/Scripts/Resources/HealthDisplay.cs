@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace RPG.Health
+namespace RPG.Resources
 {
     public class HealthDisplay : MonoBehaviour
     {
