@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Moments/Village.unity
+- path: Assets/Scenes/Menu Sreen/Menu Screen.unity
   isLoaded: 1
   isActive: 1
