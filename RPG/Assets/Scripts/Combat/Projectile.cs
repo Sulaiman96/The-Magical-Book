@@ -5,14 +5,16 @@ using RPG.Core;
 using RPG.Resources;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Combat{
     public class Projectile : MonoBehaviour
     {
-        public int projectileSpeed = 10;
-        public bool isHoming = false;
+        [SerializeField] int projectileSpeed = 10;
+        [SerializeField] bool isHoming = false;
         public GameObject hitEffect = null;
         Health target = null;
+        [SerializeField] private UnityEvent onHit;
         
         private GameObject instigator = null;
         private float damage = 0f;
@@ -35,6 +37,7 @@ namespace RPG.Combat{
 
         public void SetTarget(Health target, GameObject instigator,  float damage)
         {
+            
             this.instigator = instigator;
             this.damage = damage;
             this.target = target;
@@ -53,6 +56,7 @@ namespace RPG.Combat{
 
         private void OnTriggerEnter(Collider other)
         {
+            onHit.Invoke();
             if (other.GetComponent<Health>() == target)
             {
                 if (!target.IsDead())

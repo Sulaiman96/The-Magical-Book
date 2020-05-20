@@ -12,6 +12,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Arrow
       objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: projectile.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: projectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: projectile.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: projectile.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4116946370969171513}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1518721508805544553, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,11 +116,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3384020386911031915, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
-        type: 3}
-      propertyPath: projectileSpeed
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2620470634206913647, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
         type: 3}
@@ -129,3 +174,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87333be45fad3ed4eb20068b0d9d0a0d, type: 3}
+--- !u!82 &4116946370969171513 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1682422775262555751, guid: 87333be45fad3ed4eb20068b0d9d0a0d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3349409771030468702}
+  m_PrefabAsset: {fileID: 0}

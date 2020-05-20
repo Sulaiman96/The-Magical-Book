@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Control;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -31,6 +32,8 @@ namespace RPG.SceneManagement
             DontDestroyOnLoad(this.gameObject);
             
             Fader fader = FindObjectOfType<Fader>();
+            var playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+            playerController.enabled = false;
             
             yield return fader.FadeOut(sceneFadeTime); //fades out the scene
             
@@ -39,7 +42,8 @@ namespace RPG.SceneManagement
             wrapper.Save();
             
             yield return SceneManager.LoadSceneAsync(sceneToLoad); //asynchronously loads the scene
-            
+            var newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+            newPlayerController.enabled = false;
             //Load current scene
             wrapper.Load();
             
@@ -50,7 +54,7 @@ namespace RPG.SceneManagement
             
             yield return new WaitForSeconds(sceneWaitTime); //Wait a few seconds so that the camera can stabilise
             yield return fader.FadeIn(sceneFadeTime); //fades in the scene 
-
+            newPlayerController.enabled = true;
             Destroy(this.gameObject);
         }
 

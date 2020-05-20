@@ -13,6 +13,7 @@ namespace RPG.Resources
     {
         [SerializeField] private float regenerationPercentage = 80f;
         [SerializeField] private TakeDamageEvent takeDamage;
+        [SerializeField] private UnityEvent onDie;
 
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
@@ -53,6 +54,7 @@ namespace RPG.Resources
             takeDamage.Invoke(damage);
             if (health.value <= 0 && !isDead)
             {
+                onDie.Invoke();
                 Die();
                 GiveExperience(instigator);
             }
@@ -60,7 +62,12 @@ namespace RPG.Resources
 
         public float GetPercentageHealth()
         {
-            return 100 * (health.value / GetComponent<BaseStats>().GetStat(Stats.Stats.Health));
+            return 100 * (GetFraction());
+        }
+
+        public float GetFraction()
+        {
+            return health.value / GetComponent<BaseStats>().GetStat(Stats.Stats.Health);
         }
 
         private void Die()
