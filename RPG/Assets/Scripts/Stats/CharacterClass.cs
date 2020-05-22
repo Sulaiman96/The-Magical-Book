@@ -9,5 +9,6 @@
         Goblin,
         Knight,
         Golem,
+        Wizard,
     }
 }

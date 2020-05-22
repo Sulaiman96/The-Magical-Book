@@ -17,6 +17,19 @@
               </e>
             </e>
           </e>
+          <e p="PowerUp" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CustomizablePowerUp.cs" t="Include" />
+              <e p="PowerUpManager.cs" t="Include" />
+              <e p="PowerUpRotation.cs" t="Include" />
+              <e p="ScaleParticles.cs" t="Include" />
+              <e p="TakeablePowerUp.cs" t="Include" />
+              <e p="Utility" t="Include">
+                <e p="Singleton.cs" t="Include" />
+              </e>
+              <e p="WeaponRotation.cs" t="Include" />
+            </e>
+          </e>
           <e p="SimpleFX" t="Include">
             <e p="Materials" t="Include">
               <e p="UnlitVertexColour_Alpha.shader" t="Include" />
@@ -58,6 +71,7 @@
             <e p="Fighter.cs" t="Include" />
             <e p="Projectile.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
+            <e p="WeaponConfig.cs" t="Include" />
             <e p="WeaponPickup.cs" t="Include" />
           </e>
           <e p="Control" t="Include">

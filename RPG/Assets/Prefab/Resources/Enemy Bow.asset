@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aea9993a43db64b8ceacc20265ab6c, type: 3}
   m_Name: Enemy Bow
   m_EditorClassIdentifier: 
-  weaponRange: 10
-  weaponDamage: 10
+  weaponRange: 7
+  weaponDamage: 15
+  percentageBonus: 0
   weaponOverride: {fileID: 22100000, guid: 5e0bd6ec75a5237459acd6ab79414b9b, type: 2}
-  weaponPrefab: {fileID: 165326151687421748, guid: 9187dfb8377392b499c7ea7fcd6f23b5,
+  weaponPrefab: {fileID: 3800370032359687539, guid: 9187dfb8377392b499c7ea7fcd6f23b5,
     type: 3}
   isRightHandedWeapon: 0
   projectile: {fileID: 39699980645911093, guid: 22476c454264f1f40a6a1c23b4234eb8,
