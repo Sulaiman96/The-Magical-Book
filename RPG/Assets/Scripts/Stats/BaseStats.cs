@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Utils;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Stats
 {
@@ -14,6 +15,7 @@ namespace RPG.Stats
         [SerializeField] private Progression progression = null;
         [SerializeField] private GameObject levelUpParticleEffect = null;
         [SerializeField] private bool shouldUseModifiers = false;
+        [SerializeField] private UnityEvent onLevelUpSound;
 
         public event Action onLevelUp;
         
@@ -56,6 +58,7 @@ namespace RPG.Stats
             {
                 currentLevel.value = newLevel;
                 LevelUpEffect();
+                onLevelUpSound.Invoke();
                 onLevelUp();
             }
         }
