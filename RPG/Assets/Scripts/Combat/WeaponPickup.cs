@@ -2,14 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using RPG.Control;
+using RPG.Resources;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Combat
 {
     public class WeaponPickup : MonoBehaviour, IRaycastable
     {
-        [SerializeField] Weapon weapon = null;
+        [SerializeField] WeaponConfig weaponConfig = null;
         [SerializeField] private float respawnTime = 5f;
+        [SerializeField] private float restoreHealth = 0f;
+        [SerializeField] private UnityEvent onPickUp;
+        
         private Collider collider;
 
         private void Start()
@@ -21,13 +26,22 @@ namespace RPG.Combat
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                PickUp(other.GetComponent<Fighter>());
+                onPickUp.Invoke();
+                PickUp(other.gameObject);
             }
         }
 
-        private void PickUp(Fighter fighter)
+        private void PickUp(GameObject subject)
         {
-            fighter.EquippingWeapon(weapon);
+            if (weaponConfig != null)
+            {
+                subject.GetComponent<Fighter>().EquippingWeapon(weaponConfig);
+            }
+
+            if (restoreHealth > 0)
+            {
+                subject.GetComponent<Health>().Heal(restoreHealth);
+            }
             StartCoroutine(HideForSeconds(respawnTime));
         }
 
@@ -52,7 +66,7 @@ namespace RPG.Combat
             //You can change this into walk into range of the pickup, that way you can only pick it up if you're in range.
             if (Input.GetMouseButtonDown(0))
             {
-                PickUp(callingController.GetComponent<Fighter>());
+                PickUp(callingController.gameObject);
             }
             return true;
         }

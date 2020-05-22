@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aea9993a43db64b8ceacc20265ab6c, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
-  weaponRange: 10
-  weaponDamage: 50
+  weaponRange: 7
+  weaponDamage: 30
+  percentageBonus: 0
   weaponOverride: {fileID: 22100000, guid: e52a4f0dde167634798731a3550747d6, type: 2}
-  weaponPrefab: {fileID: 128030, guid: 3e567880dba875d4fbc7834ca7f5b289, type: 3}
+  weaponPrefab: {fileID: 0}
   isRightHandedWeapon: 0
   projectile: {fileID: 3384020386911031915, guid: ee422e53998c23e4d87ee3d4966cb433,
     type: 3}

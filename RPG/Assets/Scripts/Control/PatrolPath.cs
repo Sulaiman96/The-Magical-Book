@@ -7,9 +7,10 @@ namespace RPG.Control
     public class PatrolPath : MonoBehaviour
     {
         const float wayPointGizmosRadius = 0.3f;
+        [SerializeField] Color color = Color.magenta;
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.magenta;
+            Gizmos.color = color;
             for(int i=0; i< transform.childCount; i++)
             {
                 int j = GetNextIndex(i);

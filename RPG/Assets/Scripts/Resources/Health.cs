@@ -25,12 +25,7 @@ namespace RPG.Resources
 
         private void Awake()
         {
-            health = new LazyValue<float>(GetInitialHealth);
-        }
-
-        private float GetInitialHealth()
-        {
-            return GetComponent<BaseStats>().GetStat(Stats.Stats.Health);
+            health = new LazyValue<float>(GetMaxHealthPoints);
         }
 
         private void Start()
@@ -67,7 +62,7 @@ namespace RPG.Resources
 
         public float GetFraction()
         {
-            return health.value / GetComponent<BaseStats>().GetStat(Stats.Stats.Health);
+            return health.value / GetMaxHealthPoints();
         }
 
         private void Die()
@@ -85,13 +80,21 @@ namespace RPG.Resources
                 experience.GainXP(GetComponent<BaseStats>().GetStat(Stats.Stats.ExperiencePoints));
             }
         }
+        public void Heal(float restoreHealth)
+        {
+            health.value = Mathf.Min(health.value + restoreHealth, GetMaxHealthPoints());
+        }
         
         private void RegenerateHealth()
         {
-            float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stats.Stats.Health) * regenerationPercentage / 100;
+            float regenHealthPoints = GetMaxHealthPoints() * regenerationPercentage / 100;
             health.value = Mathf.Max(health.value, regenHealthPoints);
         }
 
+        public float GetMaxHealthPoints()
+        {
+            return GetComponent<BaseStats>().GetStat(Stats.Stats.Health);
+        }
         public bool IsDead()
         {
             return isDead;
@@ -110,5 +113,7 @@ namespace RPG.Resources
                 Die();
             }
         }
+
+        
     }
 }
